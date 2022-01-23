@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import './App.css';
 import Header from './Header';
 
@@ -5,15 +6,27 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      {/* Header */}
-      {/* Card */}
-      {/* Buttons below the cards */}
+      <Router>
+        <Routes>
+          <Route index path="/" element={<Header/>}/>
+        </Routes>
+        
+            
+        
+        
 
-
-      {/* chart screen */}
-        {/* individual chart screen */}
+        
+      </Router>
+      
     </div>
   );
 }
 
 export default App;
+{/* Header */}
+        {/* Card */}
+        {/* Buttons below the cards */}
+
+
+        {/* chart screen */}
+          {/* individual chart screen */}
