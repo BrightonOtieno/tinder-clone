@@ -7,21 +7,28 @@ import TinderCards from './TinderCards';
 function App() {
   return (
     <div className="App">
-      <Header/>
       <Router>
-        <Routes>
-          <Route index path="/" element={
-          <>
-            <TinderCards/> <SwipeButtons/>
-          </>
-        }/>
-        </Routes>
-        
-            
-        
-        
+        {/* <Header/> */}
 
+        {/* CHAT ROUTE */}
+          <Routes>
+            <Route path="/chat" element={
+              <>
+              <Header backButton='/'/>{/*with a prop of backbutton*/}
+              <h1>hello</h1>
+              </>
+            
+            }/>
+          </Routes>
         
+        {/* HOME ROUTE */}
+        <Routes>
+            <Route path="/" element={
+            <>
+              <Header /> <TinderCards/> <SwipeButtons/>
+            </>
+          }/>
+          </Routes>
       </Router>
       
     </div>
@@ -31,8 +38,8 @@ function App() {
 export default App;
 {/* Header */}
         {/* Card */}
-        {/* Buttons below the cards */}
+{/* Buttons below the cards */}
 
 
-        {/* chart screen */}
-          {/* individual chart screen */}
+{/* chart screen */}
+  {/* individual chart screen */}
