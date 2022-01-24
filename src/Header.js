@@ -16,7 +16,7 @@ function Header({backButton}) {
     return (
         <div className='header'>
             {backButton ? (
-                <Link to="/">
+                <Link to={backButton}>
                     <IconButton>
                         <ArrowBackIcon  fontSize="large"  className="header__icon"/>
                     </IconButton>

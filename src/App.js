@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import './App.css';
+import Chats from './Chats';
+import ChatScreen from './ChatScreen';
 import Header from './Header';
 import SwipeButtons from './SwipeButtons';
 import TinderCards from './TinderCards';
@@ -7,15 +9,27 @@ import TinderCards from './TinderCards';
 function App() {
   return (
     <div className="App">
+  
       <Router>
         {/* <Header/> */}
 
-        {/* CHAT ROUTE */}
+        {/* individual CHAT ROUTE */}
           <Routes>
-            <Route path="/chat" element={
+            <Route  path="/chat/:person" element={
               <>
-              <Header backButton='/'/>{/*with a prop of backbutton*/}
-              <h1>hello</h1>
+                <Header backButton='/chat'/>  
+                <ChatScreen/>
+                <h3>It works</h3>
+              </>
+            
+            }/>
+          </Routes>
+        {/* General CHAT ROUTE */}
+          <Routes>
+            <Route  path="/chat" element={
+              <>
+                <Header backButton='/'/>  
+                <Chats/>
               </>
             
             }/>
