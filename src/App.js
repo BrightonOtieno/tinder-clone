@@ -19,7 +19,7 @@ function App() {
               <>
                 <Header backButton='/chat'/>  
                 <ChatScreen/>
-                <h3>It works</h3>
+                
               </>
             
             }/>

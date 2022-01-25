@@ -31,6 +31,12 @@ const Chats = () => {
                 timestamp="40 seconds ago"
                 profilePic="https://api.time.com/wp-content/uploads/2017/02/john-wick-2-keanu-reeves1.jpg"
             />
+            <Chat
+                name="Marry"
+                message="hi"
+                timestamp="40 seconds ago"
+                profilePic="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+            />
         </div>
         );
         
